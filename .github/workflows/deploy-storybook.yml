@@ -32,6 +32,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'pnpm'
+          cache-dependency-path: 'design-system-pilot/pnpm-lock.yaml'
 
       - name: Install dependencies
         run: cd design-system-pilot && pnpm install
