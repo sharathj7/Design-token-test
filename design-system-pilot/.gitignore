@@ -16,3 +16,6 @@ dist/
 
 # turbo
 .turbo
+
+# storybook build output
+storybook-static/

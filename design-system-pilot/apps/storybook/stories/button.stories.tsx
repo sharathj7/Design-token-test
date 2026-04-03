@@ -1,14 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "@workspace/ui/components/button";
+import type { ComponentProps } from "react";
 
-const meta: Meta<typeof Button> = {
+type ButtonProps = ComponentProps<typeof Button>;
+
+const meta: Meta<ButtonProps> = {
   title: "UI/Button",
   component: Button,
   tags: ["autodocs"],
   argTypes: {
     variant: {
       control: "select",
-      options: ["default", "destructive", "outline", "secondary", "ghost", "link"],
+      options: ["default", "destructive", "outline", "subtle", "secondary", "ghost", "link"],
       description: "Visual style of the button",
       table: {
         type: { summary: "string" },
@@ -17,12 +20,16 @@ const meta: Meta<typeof Button> = {
     },
     size: {
       control: "select",
-      options: ["default", "sm", "lg", "icon"],
+      options: ["default", "sm", "lg", "icon", "icon-circle"],
       description: "Size of the button",
       table: {
         type: { summary: "string" },
         defaultValue: { summary: "default" },
       },
+    },
+    isLoading: {
+      control: "boolean",
+      description: 'Figma "loading" state — shows a spinner and disables the button',
     },
     disabled: {
       control: "boolean",
@@ -35,11 +42,12 @@ const meta: Meta<typeof Button> = {
   args: {
     children: "Button",
     disabled: false,
+    isLoading: false,
   },
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<ButtonProps>;
 
 // ─── Variants ────────────────────────────────────────────────────────────────
 
@@ -85,6 +93,14 @@ export const Link: Story = {
   },
 };
 
+/** Figma "subtle" — slate/100 bg, dark text, slate/200 on hover */
+export const Subtle: Story = {
+  args: {
+    variant: "subtle",
+    children: "Subtle",
+  },
+};
+
 // ─── Sizes ───────────────────────────────────────────────────────────────────
 
 export const SizeDefault: Story = {
@@ -120,6 +136,16 @@ export const SizeIcon: Story = {
   },
 };
 
+/** Figma "just icon circle" — 40px circular button with border */
+export const SizeIconCircle: Story = {
+  name: "Size / Icon Circle",
+  args: {
+    size: "icon-circle",
+    children: "★",
+    "aria-label": "Favourite",
+  },
+};
+
 // ─── States ──────────────────────────────────────────────────────────────────
 
 export const Disabled: Story = {
@@ -144,5 +170,31 @@ export const DisabledOutline: Story = {
     variant: "outline",
     disabled: true,
     children: "Disabled",
+  },
+};
+
+/** Figma "loading" — spinner + text, button is auto-disabled */
+export const Loading: Story = {
+  args: {
+    isLoading: true,
+    children: "Loading",
+  },
+};
+
+export const LoadingDestructive: Story = {
+  name: "Loading / Destructive",
+  args: {
+    variant: "destructive",
+    isLoading: true,
+    children: "Deleting",
+  },
+};
+
+export const LoadingOutline: Story = {
+  name: "Loading / Outline",
+  args: {
+    variant: "outline",
+    isLoading: true,
+    children: "Saving",
   },
 };
