@@ -22,16 +22,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.7.0
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: cd design-system-pilot && npm install
+        run: cd design-system-pilot && pnpm install
 
       - name: Build Storybook
-        run: cd design-system-pilot/apps/storybook && npm run build-storybook
+        run: cd design-system-pilot/apps/storybook && pnpm run build-storybook
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
