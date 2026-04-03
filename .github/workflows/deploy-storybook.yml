@@ -28,7 +28,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: cd design-system-pilot && npm install
 
       - name: Build Storybook
         run: cd design-system-pilot/apps/storybook && npm run build-storybook
