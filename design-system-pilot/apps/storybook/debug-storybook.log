@@ -1,0 +1,74 @@
+[14:10:28.861] [INFO] Initializing Storybook
+[14:10:30.016] [DEBUG] Getting package.json info for /home/user/Design-token-test/design-system-pilot/apps/storybook/package.json...
+[14:10:30.017] [DEBUG] Getting CLI versions from NPM for storybook...
+[14:10:30.017] [DEBUG] Executing command: pnpm info storybook version
+[14:10:30.860] [INFO] Adding Storybook version 10.3.4 to your project
+[14:10:30.861] [INFO] Installing Storybook for user specified project type: react
+[14:10:31.165] [INFO] Framework detected: react-vite
+[14:10:31.166] [DEBUG] Getting installed version for vitest...
+[14:10:31.166] [DEBUG] Executing command: pnpm list "vitest" --json --depth=99
+[14:10:32.204] [DEBUG] Installed version for vitest: null
+[14:10:32.204] [DEBUG] Getting installed version for msw...
+[14:10:32.204] [DEBUG] Executing command: pnpm list "msw" --json --depth=99
+[14:10:33.039] [DEBUG] Installed version for msw: null
+[14:10:33.044] [DEBUG] Using cached package.json for /home/user/Design-token-test/design-system-pilot/apps/storybook/package.json...
+[14:10:33.044] [DEBUG] Using cached package.json for /home/user/Design-token-test/design-system-pilot/apps/storybook/package.json...
+[14:10:33.044] [DEBUG] Using cached package.json for /home/user/Design-token-test/design-system-pilot/package.json...
+[14:10:33.044] [DEBUG] Using cached package.json for /home/user/Design-token-test/design-system-pilot/apps/storybook/package.json...
+[14:10:33.046] [DEBUG] Using cached version for storybook...
+[14:10:33.046] [DEBUG] Getting CLI versions from NPM for @storybook/react-vite...
+[14:10:33.046] [DEBUG] Executing command: pnpm info @storybook/react-vite version
+[14:10:33.050] [DEBUG] Getting CLI versions from NPM for @chromatic-com/storybook...
+[14:10:33.050] [DEBUG] Executing command: pnpm info @chromatic-com/storybook version
+[14:10:33.054] [DEBUG] Getting CLI versions from NPM for @storybook/addon-vitest...
+[14:10:33.054] [DEBUG] Executing command: pnpm info @storybook/addon-vitest version
+[14:10:33.057] [DEBUG] Getting CLI versions from NPM for @storybook/addon-a11y...
+[14:10:33.057] [DEBUG] Executing command: pnpm info @storybook/addon-a11y version
+[14:10:33.061] [DEBUG] Getting CLI versions from NPM for @storybook/addon-docs...
+[14:10:33.061] [DEBUG] Executing command: pnpm info @storybook/addon-docs version
+[14:10:33.067] [DEBUG] Getting CLI versions from NPM for @storybook/addon-onboarding...
+[14:10:33.067] [DEBUG] Executing command: pnpm info @storybook/addon-onboarding version
+[14:10:34.897] [INFO] - Configuring main.ts
+[14:10:34.899] [INFO] - Configuring preview.ts
+[14:10:34.901] [INFO] - Adding Storybook command to package.json
+[14:10:34.901] [DEBUG] Getting package.json info for /home/user/Design-token-test/design-system-pilot/apps/storybook/package.json...
+[14:10:34.901] [DEBUG] Using cached package.json for /home/user/Design-token-test/design-system-pilot/apps/storybook/package.json...
+[14:10:34.901] [DEBUG] Using cached package.json for /home/user/Design-token-test/design-system-pilot/apps/storybook/package.json...
+[14:10:34.902] [INFO] - Copying framework templates
+[14:10:34.934] [DEBUG] Executing command: npm config get registry -ws=false -iwr
+[14:10:45.170] [ERROR] [38;2;241;97;97mError: Cannot find @storybook/react-vite/package.json, Error: Cannot find module '@storybook/react-vite/package.json'
+Require stack:
+- .
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at Function.resolve (node:internal/modules/helpers:157:19)
+    at resolvePackageDir (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-QAXH75FV.js:725:26)
+    at getRendererDir (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5401:12)
+    at templatePath (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5484:25)
+    at copyTemplateFiles (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5499:23)
+    at async baseGenerator (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1298:152)
+    at async GeneratorExecutionCommand.executeProjectGenerator (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1366:101)
+    at async GeneratorExecutionCommand.execute (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1388:27)
+    at async doInitiate (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:2886:68)
+
+TypeError: fetch failed
+    at node:internal/deps/undici/undici:14976:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async resolveUsingBranchInstall (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5384:18)
+    at async getRendererDir (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5406:12)
+    at async templatePath (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5484:19)
+    at async copyTemplateFiles (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5499:17)
+    at async baseGenerator (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1298:152)
+    at async GeneratorExecutionCommand.executeProjectGenerator (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1366:101)
+    at async GeneratorExecutionCommand.execute (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1388:27)
+    at async doInitiate (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:2886:68)[39m
+    at getRendererDir (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5410:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async templatePath (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5484:19)
+    at async copyTemplateFiles (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-X3N3W66Q.js:5499:17)
+    at async baseGenerator (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1298:152)
+    at async GeneratorExecutionCommand.executeProjectGenerator (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1366:101)
+    at async GeneratorExecutionCommand.execute (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:1388:27)
+    at async doInitiate (file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:2886:68)
+    at async file:///root/.npm/_npx/aed33698b3a43253/node_modules/create-storybook/dist/_node-chunks/chunk-N3IHY4TZ.js:2928:20
+    at async withTelemetry (file:///root/.npm/_npx/aed33698b3a43253/node_modules/storybook/dist/_node-chunks/chunk-HUYNFPPD.js:225:12)
+[14:10:45.192] [INFO] Storybook collects completely anonymous usage telemetry. We use it to shape Storybook's roadmap and prioritize features. You can learn more, including how to opt out, at https://storybook.js.org/telemetry

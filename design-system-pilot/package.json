@@ -1,0 +1,16 @@
+{
+  "name": "design-system-pilot",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.3",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@10.7.0"
+}
