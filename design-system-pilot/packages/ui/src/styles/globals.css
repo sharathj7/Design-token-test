@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source "../components";
+@source "../hooks";
+@source "../lib";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -45,9 +48,11 @@
 }
 
 :root {
+  --font-geist-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-geist-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(0.145 0.037 254);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);

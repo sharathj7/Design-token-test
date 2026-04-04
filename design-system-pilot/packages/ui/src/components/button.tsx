@@ -12,19 +12,19 @@ const buttonVariants = cva(
       variant: {
         // ── Figma: "primary button" / "default" ───────────────────────────
         default:
-          "bg-primary text-primary-foreground shadow-xs hover:bg-primary-hover",
+          "bg-primary text-primary-foreground hover:bg-primary-hover",
         // ── Figma: "destructive" ──────────────────────────────────────────
         destructive:
-          "bg-destructive text-white shadow-xs hover:bg-destructive-hover focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+          "bg-destructive text-white hover:bg-destructive-hover focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         // ── Figma: "outline" ─────────────────────────────────────────────
         outline:
-          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+          "border bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         // ── Figma: "subtle" ───────────────────────────────────────────────
         subtle:
           "bg-secondary text-secondary-foreground hover:bg-border",
         // ── secondary: kept for backwards-compat, maps loosely to subtle ──
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         // ── Figma: "ghost" ────────────────────────────────────────────────
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
