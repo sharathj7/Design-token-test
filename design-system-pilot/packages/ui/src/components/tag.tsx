@@ -8,11 +8,11 @@ const tagVariants = cva(
   {
     variants: {
       variant: {
-        neutral:  "bg-gray-300 text-gray-800",
-        positive: "bg-green-300 text-green-800",
-        error:    "bg-red-300 text-red-800",
-        warning:  "bg-amber-300 text-amber-800",
-        info:     "bg-blue-300 text-blue-800",
+        neutral:  "bg-tag-neutral-bg text-tag-neutral-text",
+        positive: "bg-tag-positive-bg text-tag-positive-text",
+        error:    "bg-tag-error-bg text-tag-error-text",
+        warning:  "bg-tag-warning-bg text-tag-warning-text",
+        info:     "bg-tag-info-bg text-tag-info-text",
       },
     },
     defaultVariants: {

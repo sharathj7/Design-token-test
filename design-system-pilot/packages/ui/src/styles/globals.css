@@ -45,6 +45,16 @@
   --radius-xl: calc(var(--radius) + 4px);
   --color-primary-hover: var(--primary-hover);
   --color-destructive-hover: var(--destructive-hover);
+  --color-tag-neutral-bg: var(--tag-neutral-bg);
+  --color-tag-neutral-text: var(--tag-neutral-text);
+  --color-tag-positive-bg: var(--tag-positive-bg);
+  --color-tag-positive-text: var(--tag-positive-text);
+  --color-tag-error-bg: var(--tag-error-bg);
+  --color-tag-error-text: var(--tag-error-text);
+  --color-tag-warning-bg: var(--tag-warning-bg);
+  --color-tag-warning-text: var(--tag-warning-text);
+  --color-tag-info-bg: var(--tag-info-bg);
+  --color-tag-info-text: var(--tag-info-text);
 }
 
 :root {
@@ -84,6 +94,16 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --tag-neutral-bg: oklch(0.872 0.005 264);    /* gray/300  = #D1D5DB */
+  --tag-neutral-text: oklch(0.278 0.029 257);  /* gray/800  = #1F2937 */
+  --tag-positive-bg: oklch(0.871 0.148 154);   /* green/300 = #86EFAC */
+  --tag-positive-text: oklch(0.398 0.124 147); /* green/800 = #166534 */
+  --tag-error-bg: oklch(0.788 0.130 19);       /* red/300   = #FCA5A5 */
+  --tag-error-text: oklch(0.396 0.140 26);     /* red/800   = #991B1B */
+  --tag-warning-bg: oklch(0.879 0.154 86);     /* amber/300 = #FCD34D */
+  --tag-warning-text: oklch(0.497 0.134 80);   /* amber/800 = #92400E */
+  --tag-info-bg: oklch(0.809 0.105 257);       /* blue/300  = #93C5FD */
+  --tag-info-text: oklch(0.422 0.178 266);     /* blue/800  = #1E40AF */
 }
 
 .dark {
